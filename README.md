@@ -1,22 +1,72 @@
-Техническйи функционал
-1. при загрузке приложения массив слов отправляется в LS , затем загружается обратно (сделано, чтоб показать использование userEffect)
-2. Загрузка идет с небольшой задержкой, в это время включается Loader (использован  setTimeout)
-3. Использовала  React Router для навигации и стиль ссылок NavLink для удобного отображения на какой странице находишься сейчас
-4. Использован Redux TK для фильтрации и отправки в избранное
+📚 Study English App
 
+🌍 **Live Demo:**  
+👉 ссылка
 
-Функционал использования
-1. на странице Cardlist отображаются картчки  с английскими словами
-- при нажатии на карточку, она переворачивается и показывает перевод на русский язык
- - при нажатии на звездочку - слово попадает в  Избранное (страница Favorites и в верхнем правом углу появляется икока звездочка с количетвом избранных слов в бэйдже)
- - выведены 4 категории для фильтрации слов по категориям
+---
 
- 2. 2 страница Game. 
- - можно переворачивать карточку и смотреть перевод
- - отправлять в избранное
- - листать карточки вправо / влево
- - видеть текущий номер карточки из общего количетсва карточек
+## 📌 About the Project
 
- 3. 3 страница Favorites/
- - Получен список избранных слов
- - можно удалять слова, нажимая на X, при этом уменьшается количество в бэйдже
+**Study English App** is an interactive web application for learning English words using flashcards and game mechanics.
+The project demonstrates working with React Hooks, routing, global state management, and Local Storage.
+
+**Study English App** — это интерактивное веб-приложение для изучения английских слов с использованием карточек и игрового режима.
+Проект демонстрирует работу с React Hooks, маршрутизацией, глобальным состоянием и Local Storage.
+
+---
+
+## 🧩 Features
+
+🗂 1. Card List Page
+- Displays flashcards with English words
+- Click on a card → it flips and shows the Russian translation
+- Click on ⭐ → word is added to Favorites
+- Favorite counter badge is displayed in the top-right corner
+- 4 categories available for filtering words
+
+🎮 2. Game Page
+- Flip cards to see translations
+- Add words to Favorites
+- Navigate cards left / right
+- View current card number out of total
+
+⭐ 3. Favorites Page
+- Displays the list of favorite words
+- Remove a word by clicking ❌
+- Favorites badge updates automatically
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** — UI library  
+- **Vite** — development & build tool  
+- **Redux Toolkit** — state management  
+- **React-Redux** — integration with React  
+- **React Router**
+- **Local Storage**
+
+---
+
+## 🛠 Technical Implementation 
+
+This project was created as a practice application to demonstrate:
+- Working with React Hooks (useEffect) and Local Storage (On application load, the words array is first saved to Local Storage, then loaded back into the application state)
+- Artificial loading delay is implemented using setTimeout, during which a Loader component is displayed
+- Routing configuration using React Router
+- NavLink is used to highlight the active page
+- Implementation of interactive UI elements (card flip, dynamic badge counter)
+- State management with Redux Toolkit for:
+-- Filtering words by category
+-- Managing Favorites
+-- Global state management
+
+---
+
+## 🚀 How to Run Locally
+
+```bash
+git clone https://github.com/kretova0319/study-english-app.git
+cd study-english-app
+npm install
+npm start
