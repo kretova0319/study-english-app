@@ -1,7 +1,7 @@
 📚 Study English App
 
 🌍 **Live Demo:**  
-👉 ссылка
+👉 https://kretova0319.github.io/study-english-app
 
 ---
 
