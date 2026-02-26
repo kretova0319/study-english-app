@@ -1,0 +1,45 @@
+.container__header {
+  background-color: rgb(24, 58, 102);
+  align-items: center;
+  height: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.wrapper__header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 23px 20px;
+}
+.logo {
+  max-width: 100px;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+a {
+  color: white;
+  font-size: 18px;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+a:hover {
+  color: rgb(157, 190, 198);
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.active {
+  color: rgb(157, 190, 198);
+  font-size: 20px;
+  font-weight: bold;
+  transform: scale(1.1);
+}

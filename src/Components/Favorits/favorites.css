@@ -1,0 +1,61 @@
+.favorites {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.favorites__list {
+  margin-top: 20px;
+}
+
+.favorites__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 60px;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.favorites__english {
+  font-weight: 600;
+}
+
+.favorites__russian {
+  text-align: left;
+  color: #555;
+}
+
+.favorites__remove {
+  background: transparent;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+  color: rgb(24, 58, 102);
+}
+
+.favorites__remove:hover {
+  color: red;
+}
+
+.favorites-wrap {
+  position: relative;
+}
+.favorites-icon {
+  font-size: 26px;
+  display: inline-block;
+}
+
+.favorites-badge {
+  position: absolute;
+  top: 0px;
+  right: -15px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

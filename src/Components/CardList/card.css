@@ -1,0 +1,54 @@
+.wrapper__tile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  position: relative;
+  margin: 25px;
+  width: 220px;
+  height: 300px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  background-color: rgb(228, 227, 227);
+  color: black;
+  text-align: center;
+}
+
+.word {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+.check {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.star {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+  color: gray;
+}
+
+.star.active {
+  color: rgb(24, 58, 102);
+}
+.grey {
+  background-color: rgb(228, 227, 227);
+  color: var(--black);
+}
+.blue {
+  background-color: rgba(134, 164, 203, 0.718);
+  color: white;
+}
+
